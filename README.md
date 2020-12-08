@@ -2,7 +2,7 @@
 
 Doing the walk so you don't have too.
 
-(v1.0.0, Nov 30 2020)
+(v1.0.0, Dec 8 2020)
 
 ## Business/Use Case
 
