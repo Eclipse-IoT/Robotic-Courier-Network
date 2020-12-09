@@ -45,7 +45,7 @@ Many people fear that robots will take away jobs; however, no one looks at the p
 
 #### _Visual representation of the solution._
 
-![signal-2020-12-02-110107](/home/greg/Desktop/working-name/assets/signal-2020-12-02-110107.jpeg)
+![signal-2020-12-02-110107](/assets/signal-2020-12-02-110107.jpeg)
 
 #### What components is the demo using?
 
