@@ -2,7 +2,7 @@
 
 Doing the walk so you don't have too.
 
-(v1.0.0, Dec 8 2020)
+(v1.0.0, Nov 30 2020)
 
 ## Business/Use Case
 
@@ -22,18 +22,13 @@ Furthermore, employees do not only have to worry about completing tasks beyond t
 
 The solution to this unwavering issue is not new, but if implemented correctly can be revolutionary. The solution is automation. Ever since the 1930s, and the introduction of the industrial revolution,  [humans have been looking for way to complete tasks automatically](https://www.mentorworks.ca/blog/market-trends/history-of-automation/).  With growing research in computers, AI, edge computing and robotics the idea of automating everything has never appeared so possible. Through leveraging these emerging technologies humans can create complex automated routines to complete tasks that would normally get in the way. As a result of this automation,  humans will be able to switch their focus on what really matters, the original role they have been hired to fill. Human-Robot-Collaboration further helps this idea by additionally improving the effectiveness of human work though the optimization of robotic and AI based tools. Types of Human-Robot-Collaboration range from smart tools which assist the operator in precisely drilling holes in an assembly, to advanced VR and robotic solutions that allow a doctor to perform surgery from a remote location, and everything in between. Through the introduction of human controlled robots, the required manual-handling can be decreased, or completely removed, leaving those employees injury free and inspired to get their job done.
 
-
-
-In this demo, we will be utilizing AI, Robotics and Edge computing in order to automate the delivery of packages between two stations in a warehouse. Zenoh is in change of
+In this demo, we will be utilizing AI, Robotics and Edge computing in order to automate the delivery of packages between two stations in a warehouse. 
 
 
 
 #### _Why is this important?_
 
-- Many people fear that robots will take away jobs; however, no one looks at the possibility of how robotics can improve quality of life of workers.
-- To mitigate workplace injuries
-- Improve production yield, while by optimally utilizing employees 
-- Properly trained AI already can anticipate raw material and component shortages; automating their delivery will improve productivity
+Many people fear that robots will take away jobs; however, no one looks at the possibility of how robotics can improve quality of life of workers. Many individuals every year face a reduced quality of life due to complications in the workplace such as high complexity, stress, and injury. We must do all in our power to mitigate complications such as workplace injuries. Not only can we make the lives of workers better we can improve production yield. Properly trained AI already can anticipate raw material and component shortages; automating their delivery will improve productivity. Lastly, the goal of human-robot collaboration in industry is to work more like a tool to enhance human abilities then as a replacement of humans all together.
 
 #### _Key benefits_
 
