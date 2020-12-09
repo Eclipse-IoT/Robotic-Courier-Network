@@ -75,59 +75,6 @@ Many people fear that robots will take away jobs; however, no one looks at the p
 - Zenoh allows for communication between raspberry pi's and other edge servers
 - Turtlebot's on board edge computer, relies on a more powerful edge server to perform navigation
 
-## How to run
-
-
-
-It is higly suggested that you install a multi-terminal application such as "Terminator" on the ubuntu machine.
-
-1) open up 6 diffrent terminal shells, 3 will be used for the turtlebot, 3 will be used for the stations.
-
-2) open a SSH connection to the turtlebot, station1, station2
-
-3) run the turtle-bot bring-up script
-
-**Turtlebot Bring-up:**
-
-```bash
-ros2 launch turtlebot3_bringup robot.launch.py
-
-rviz2 -d `ros2 pkg prefix turtlebot3_navigation2`/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
-
-ros2 launch nav2_bringup bringup_launch.py map:=/home/greg/roomWithGates.yaml inflation_layer.inflation_radius:=0.01 inflation_layer.cost_scaling_factor:=10.0
-
-#After
-#in RVIZ goto Panels > Add New Panel > Navigation 2 > Ok
-#now we need to set up the 2D position Estimate
-# press 2D position Estimate, and point on the map where the robot is facing in 3D space with a click and drag.
-#if this crashes, relaunch and try again!
-```
-
-4) clone this repository on the stations (raspbery pi's) and on the ubuntu machine
-
-5) launch stationManager.py on each station
-
-```bash
-#Usage: python3 stationManager.py <stationName> <station Cords>
-
-python3 stationManager.py 1 "pose: {header: {frame_id: map}, pose: {position: {x: -2.7, y: -3.3, z: 0.0}, orientation:{x: 0.0, y: 0.0, z: -0.70, w: 0.70}}}"
-```
-
-6) run masterEdge.py on the ubuntu machine 
-
-```bash
-Python3 masterEdge.py
-```
-
-
-
-
-
-
-
-
-
-
 # **Setup Guide**
 
 1. - ROS setup, Tutlebot + PC
@@ -192,3 +139,48 @@ Python3 masterEdge.py
      - Assuming you have already followed the steps above and created a map
      - Launch that map and NAV2 as demonstrated above
      - 2D Pose Goal > Drag to point a vector that describes goal positon > look at the terminal used to launch RVIZ, selected position will be visible > Copy and paste this with quotes around it as a parameter.
+
+
+## How to run
+
+
+
+It is higly suggested that you install a multi-terminal application such as "Terminator" on the ubuntu machine.
+
+1) open up 6 diffrent terminal shells, 3 will be used for the turtlebot, 3 will be used for the stations.
+
+2) open a SSH connection to the turtlebot, station1, station2
+
+3) run the turtle-bot bring-up script
+
+**Turtlebot Bring-up:**
+
+```bash
+ros2 launch turtlebot3_bringup robot.launch.py
+
+rviz2 -d `ros2 pkg prefix turtlebot3_navigation2`/share/turtlebot3_navigation2/rviz/tb3_navigation2.rviz
+
+ros2 launch nav2_bringup bringup_launch.py map:=/home/greg/roomWithGates.yaml inflation_layer.inflation_radius:=0.01 inflation_layer.cost_scaling_factor:=10.0
+
+#After
+#in RVIZ goto Panels > Add New Panel > Navigation 2 > Ok
+#now we need to set up the 2D position Estimate
+# press 2D position Estimate, and point on the map where the robot is facing in 3D space with a click and drag.
+#if this crashes, relaunch and try again!
+```
+
+4) clone this repository on the stations (raspbery pi's) and on the ubuntu machine
+
+5) launch stationManager.py on each station
+
+```bash
+#Usage: python3 stationManager.py <stationName> <station Cords>
+
+python3 stationManager.py 1 "pose: {header: {frame_id: map}, pose: {position: {x: -2.7, y: -3.3, z: 0.0}, orientation:{x: 0.0, y: 0.0, z: -0.70, w: 0.70}}}"
+```
+
+6) run masterEdge.py on the ubuntu machine 
+
+```bash
+Python3 masterEdge.py
+```
