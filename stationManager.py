@@ -1,4 +1,4 @@
-# Copyright (c) 2014,2020 ADLINK Technology Inc.
+# Copyright (c) 2020 Eclipse Foundation.
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
