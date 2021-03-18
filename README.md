@@ -1,4 +1,4 @@
-# RCN - Robot Currier Network
+# RCN - Robot Courier Network
 
 Doing the walk so you don't have too.
 
